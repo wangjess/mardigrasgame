@@ -64,13 +64,11 @@
 }
 /* Alligator Float */
 #paradeFloat1 {
-  /* left: -150px; */
   position: absolute;
   left: 0px;
 }
 /* Lady Float */
 #paradeFloat2 {
-  /* left: -300px; */
   left: 150px;
   position: absolute;
 }
@@ -81,19 +79,13 @@
 
 
 
-/* Splash Screen Shit */
+/* Splash Screen Stuff */
 #splash {
+  z-index: 9999;
   background-color:white;
   text-align: center;
 }
 #splash-content { 
-  /* z-index: 9999; */
   font-style: italic;
   font-size: 30px;
-  /* width: 500px; */
-  /* height: 500px; */
-  /* display: inline-block; */
-  .game-window {
-     background: white;
-  }
 }
