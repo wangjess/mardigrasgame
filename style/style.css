@@ -1,11 +1,13 @@
-
 /* Main Containers */
 .outer-container {
-  height: 600px;
-  width: 800px;
   background: #eee;
   border: 5px solid #ccc;
+  height: 600px;
+  margin: 0 auto;
+  width: 800px;
+  overflow: hidden;
 }
+
 .game-window {
   height: 100%;
   width: 500px;
@@ -14,8 +16,7 @@
   float: left;
   position: relative;
 }
-#actualGame{
-
+#actualGame {
 }
 .status-window {
   height: 100%;
@@ -77,15 +78,24 @@
   left: -400px;
 }
 
-
-
 /* Splash Screen Stuff */
 #splash {
-  z-index: 9999;
-  background-color:white;
+  align-items: center;
+  background-color: #fff;
+  border: 3px solid #000;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
   text-align: center;
+  top: 0;
+  vertical-align: middle;
+  z-index: 9999;
 }
-#splash-content { 
+
+#splash-content {
   font-style: italic;
   font-size: 30px;
 }
