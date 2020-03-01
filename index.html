@@ -5,6 +5,19 @@
 <!-- JS -->
 <script src='scripts/jquery.min.js'></script>
 <script src='scripts/page.js'></script>
+
+<!-- Script for Splash Screen Title -->
+<script>
+  $(document).ready(function () {
+    $('#splash').css('background', white); // doing this with jQuery for ease
+
+    // here are the basics, just like your existing code
+    $("#splash").click(function () {
+        $("#splash").fadeOut("slow"); // you could also use $(this).fadeOut('slow');
+    });
+});
+</script>
+
 <!-- JS for Parade Floats to Loop Continously -->
 <script>
 $(document).ready(function() {
@@ -19,11 +32,9 @@ $(document).ready(function() {
     loop();
 });
 </script>
+
 <!-- JS to Make Parade Floats Stop When Person is In Front -->
 <script>
-  $("#stop").click(function() {
-  $("#paradeFloats").stop();
-});
 </script>
 
 <!-- CSS -->
@@ -31,9 +42,15 @@ $(document).ready(function() {
 
 <!-- HTML -->
 <body>
+
   <div class='outer-container'>
+    
     <div class='game-window'>
+      <div id="splash">
+        <div id="splash-content">Mardi Gras Parade!!!!!!</div>
+      </div>
       <div id="actualGame">
+        
         <div id='player' class='playerObject'>
           <img class='player-avatar' src='img/person.png' height='50px'/> <!--person img: src='https://www.google.com/imgres?imgurl=http%3A%2F%2Fclipart-library.com%2Fnew_gallery%2F54-540691_others-clipart-helpful-person-generic-person.png&imgrefurl=http%3A%2F%2Fclipart-library.com%2Fclip-art%2F54-540691_others-clipart-helpful-person-generic-person.htm&tbnid=V19QgOYn0jYyzM&vet=12ahUKEwidx5GevcrnAhUJ0KwKHQynD9AQMygBegUIARCJAg..i&docid=hVn27RN51ga3yM&w=920&h=830&q=person&hl=en&ved=2ahUKEwidx5GevcrnAhUJ0KwKHQynD9AQMygBegUIARCJAg'-->
         </div>
