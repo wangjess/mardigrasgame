@@ -94,7 +94,7 @@ function keydownRouter(e) {
 }
 
 function checkCollisions() {
-  
+  // TODO!
 }
 
 function isColliding(o1, o2) {
