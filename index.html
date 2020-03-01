@@ -6,17 +6,17 @@
 <script src='scripts/jquery.min.js'></script>
 <script src='scripts/page.js'></script>
 <script>
-  $(document).ready(function() {
-  function loop() {
-      $('#paradeFloats').css({left:0});
-      $('#paradeFloats').animate ({
-          left: '+=100',
-      }, "slow", 'linear', function() {
-          loop();
-      });
-  }
-  loop();
-  });
+$(document).ready(function() {
+    function loop() {
+        $('#paradeFloats').css({left:-300});
+        $('#paradeFloats').animate ({
+            left: '+=1400',
+        }, 5000, 'linear', function() {
+            loop();
+        });
+    }
+    loop();
+});
 </script>
 
 <!-- CSS -->
@@ -32,8 +32,7 @@
         </div>
         <div id="paradeRoute">
             <div id="dottedLine"></div>
-            <div id="paradeFloats">
-              <p>what</p>
+            <div id="paradeFloats" class="bothFloats">
               <div id="paradeFloat1" class='paradeFloat'>
                 <img src='img/parade_float_1.gif' height='80px'/> <!-- src: https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.clipart.email%2Fb0a85a880dc856c8129f51d506469510_mardi-gras-background-transparent-png-clipart-free-download-ywd_474-256.gif&imgrefurl=https%3A%2F%2Fwww.clipart.email%2Fclipart%2Ftransparent-background-mardi-gras-float-clipart-231098.html&tbnid=QDcU0K_06jcQJM&vet=12ahUKEwj40aPwwsrnAhUFgK0KHU4qCkQQMygEegUIARDsAQ..i&docid=7_c8q7QtWx89bM&w=474&h=256&q=mardi%20gras%20parade%20clip%20art&hl=en&client=firefox-b-1-e&ved=2ahUKEwj40aPwwsrnAhUFgK0KHU4qCkQQMygEegUIARDsAQ -->
               </div>

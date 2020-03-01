@@ -57,12 +57,24 @@
   position: absolute;
   top: 10px;
 }
+/* Makes #paradeFloats animation work */
+.bothFloats {
+  position: absolute;
+  top: 10px;
+}
+/* Alligator Float */
 #paradeFloat1 {
-  left: -300px;
+  /* left: -150px; */
+  position: absolute;
+  left: 0px;
 }
+/* Lady Float */
 #paradeFloat2 {
-  left: -150px;
+  /* left: -300px; */
+  left: 150px;
+  position: absolute;
 }
+/* Div Containing 2 Floats */
 #paradeFloats {
   left: -400px;
 }
