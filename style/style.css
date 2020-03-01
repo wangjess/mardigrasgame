@@ -83,14 +83,17 @@
 
 /* Splash Screen Shit */
 #splash {
+  background-color:white;
   text-align: center;
 }
 #splash-content { 
-  /* background-color:white; */
   /* z-index: 9999; */
   font-style: italic;
   font-size: 30px;
   /* width: 500px; */
   /* height: 500px; */
   /* display: inline-block; */
+  .game-window {
+     background: white;
+  }
 }
