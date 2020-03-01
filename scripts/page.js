@@ -166,6 +166,7 @@ function movePerson(arrow) {
   
   switch (arrow) {
     case KEYS.left: { // left arrow
+      // TODO! Modify so the User can't be a bastard and walk INTO THE FLOAT
       let newPos = parseInt(player.css('left'))-PERSON_SPEED;
       if (newPos < 0) {
         newPos = 0;
