@@ -8,14 +8,12 @@
 
 <!-- Script for Splash Screen Title -->
 <script>
-  $(document).ready(function () {
-    $('#splash').css('opacity', '1.0'); // doing this with jQuery for ease
-
-    // here are the basics, just like your existing code
-    $("#splash").click(function () {
-        $("#splash").fadeOut("slow"); // you could also use $(this).fadeOut('slow');
-    });
-});
+function splash(param) {
+ var time = param;
+ setTimeout(function () {
+   $('#splash').hide();
+ }, time);
+}
 </script>
 
 <!-- JS for Parade Floats to Loop Continously -->
@@ -41,7 +39,7 @@ $(document).ready(function() {
 <link rel="stylesheet" type="text/css" href="style/style.css">
 
 <!-- HTML -->
-<body>
+<body onload="splash(3000)">
 
   <div class='outer-container'>
     
