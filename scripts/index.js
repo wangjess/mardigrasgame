@@ -1,4 +1,4 @@
-async function splash(time) {
+function splash(time) {
   return new Promise(resolve => {
     setTimeout(() => {
       $("#splash").hide();
