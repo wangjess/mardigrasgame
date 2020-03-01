@@ -93,8 +93,9 @@ function keydownRouter(e) {
   }
 }
 
-function checkCollisions() {
-  // TODO!
+function checkCollisions() { 
+  // TODO! What is this supposed to do?
+  isColliding(paradeRoute, player);
 }
 
 function isColliding(o1, o2) {
